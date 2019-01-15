@@ -6,7 +6,7 @@
 
 ## Разработка модулей Browser Automation Studio
 
-## JSON Module / Модуль JSON
+## Модуль JSON / JSON Module
 
 [Русская документация](./jpath-documentation-ru.html)
 
