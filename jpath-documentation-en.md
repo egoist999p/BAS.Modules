@@ -65,9 +65,7 @@
 | $..book[?(@.isbn)]                    | All books with an ISBN number                                |
 | $.store.book[?(@.price < 10)]         | All books in store cheaper than 10                           |
 | $..book[?(@.price <= $['expensive'])] | All books in store that are not "expensive"                  |
-| $..book[?(@.author =~ /.*REES/i)]     | All books matching regex (ignore case)                       |
 | $..*                                  | Give me every thing                                          |
-| $..book.length()                      | The number of books                                          |
 
 ## Helpful links
 
