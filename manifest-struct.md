@@ -71,30 +71,46 @@
 Все указанные экшены будут отображаться на панели модуля в режиме **Запись**.
 После преобразования, массив **actions** будет выглядеть, например, так:
 
-'''javascript
+```javascript
 	"actions":
 	[
 		{
-			"name":"First_Action",
+			"name":"[0]",
 			"description":
 			{
-				"en": "Proxy",
-				"ru": "Прокси"
+				"en": "[2]",
+				"ru": "[3]"
 			},
-			"template": "{{Variable}}",
-			"is_element": false,
-			"interface": "vk_proxy_interface.js",
-			"select": "vk_proxy_select.js",
-			"code": [{"file":"vk_proxy_code.js", "name": "vk_proxy_code"}]
+			"template": "[4]",
+			"is_element": [5],
+			"interface": "[6]",
+			"select": "[7]",
+			"code": 
+			[
+				{
+					"file": "[8]", 
+					"name": "[9]"
+				}
+			]
 		},
 		{
-			"name":"VK_Token",
-			"description":{"en": "Authorization","ru": "Авторизация"},
-			"template": "{{Variable}}",
-			"is_element": false,
-			"interface": "vk_token_interface.js",
-			"select": "vk_token_select.js",
-			"code": [{"file":"vk_token_code.js", "name": "vk_token_code"}]
+			"name":"[0]",
+			"description":
+			{
+				"en": "[2]",
+				"ru": "[3]"
+			},
+			"template": "[4]",
+			"is_element": [5],
+			"interface": "[6]",
+			"select": "[7]",
+			"code": 
+			[
+				{
+					"file": "[8]", 
+					"name": "[9]"
+				}
+			]
 		}
-	],
-'''
+	],	
+```
