@@ -49,4 +49,52 @@
 - [5] : это заголовок меню модуля на панели экшенов en ("Sample Plugin") 
 - [6] :	это заголовок меню модуля на панели экшенов ru ("Простой Плагин") 
 
+Информация о версии модуля будет отображаться в менеджере формате [7].[8], поэтому:
+- [7] : это старшая версия модуля (1)
+- [8] : это младшая версия модуля (0)
 
+Информация о разработчике модуля:
+- [9] : это никнейм разработчика ("Oyasumi Punpun")
+- [10] : это почта разработчика	("likangt2012@gmail.com")
+- [11] : это сайт разработчика ("cheshirecaat.github.io/BAS.Modules/")
+
+Информация о версии Browser Automation Studio:
+- [12] : это версия BAS Api (1)
+
+### Действия (Actions)
+
+Далее идут самые важные, и, пожалуй, самые интересные части.
+Тут стоит вспомнить первую статью о структуре модуля.
+В ней мы уже частично затрагивали значения полей, о который я расскажу далее.
+
+Информация о действиях (экшенах) модуля расположена в поле **actions**.
+Все указанные экшены будут отображаться на панели модуля в режиме **Запись**.
+После преобразования, массив **actions** будет выглядеть, например, так:
+
+'''javascript
+	"actions":
+	[
+		{
+			"name":"First_Action",
+			"description":
+			{
+				"en": "Proxy",
+				"ru": "Прокси"
+			},
+			"template": "{{Variable}}",
+			"is_element": false,
+			"interface": "vk_proxy_interface.js",
+			"select": "vk_proxy_select.js",
+			"code": [{"file":"vk_proxy_code.js", "name": "vk_proxy_code"}]
+		},
+		{
+			"name":"VK_Token",
+			"description":{"en": "Authorization","ru": "Авторизация"},
+			"template": "{{Variable}}",
+			"is_element": false,
+			"interface": "vk_token_interface.js",
+			"select": "vk_token_select.js",
+			"code": [{"file":"vk_token_code.js", "name": "vk_token_code"}]
+		}
+	],
+'''
