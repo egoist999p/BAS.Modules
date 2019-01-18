@@ -7,25 +7,25 @@
 
 ```javascript
 {
-	"name":"{0}",
+	"name":"[0]",
 	"info":
-  {
-    "en": "{1}", 
-    "ru": "{2}"
-   },
-	"icon": "{3}",
-	"description":"{4}",
+	{
+		"en": "[1]", 
+		"ru": "[2]"
+	},
+	"icon": "[3]",
+	"description":"[4]",
 	"description_small":
-  {
-    "en": "{5}", 
-    "ru": "{6}"
-  },
-	"major_version": {7},
-	"minor_version": {8},
-	"developer_name": "{9}", 
-	"developer_email": "{10}", 
-	"developer_site": "{11}",
-	"api_version": {12},
+	{
+		"en": "[5]", 
+		"ru": "[6]"
+	},
+	"major_version": [7],
+	"minor_version": [8],
+	"developer_name": "[9]", 
+	"developer_email": "[10]", 
+	"developer_site": "[11]",
+	"api_version": [12],
 	"actions": [],
 	"localize": {},
 	"engine": [],
